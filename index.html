@@ -136,7 +136,7 @@
 			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
 				<div class="work-thumb">
 					<a href="images/sammoorfield_nebula06.jpg" title="<strong>PROJECT: </strong>The Story of Earth, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>A small part of a one billion voxel nebula simulation created using PhoenixFD." class="image-popup">
-						<img src="images/sammoorfield_nebula06.jpg" class="img-responsive" alt="nebula06">
+						<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/sammoorfield_nebula06.jpg" class="img-responsive" alt="nebula06">						
 					</a>
 				</div>
 			</div>
@@ -939,6 +939,17 @@
 		</div>
 	</div>
 </section>
+
+<!-- DEFER IMG LOAD -->
+<script>
+	function init() {
+	var imgDefer = document.getElementsByTagName('img');
+	for (var i=0; i<imgDefer.length; i++) {
+	if(imgDefer[i].getAttribute('data-src')) {
+	imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+	} } }
+	window.onload = init;
+</script>
 
 </body>
 </html>
