@@ -3,11 +3,11 @@
 <!-- HEAD -->
 <head>
 	<meta charset="UTF-8">
-	<title>Sam Moorfield</title>
+	<title>Sam Moorfield - CGI Artist</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="description" content="Hi, I'm Sam Moorfield. A CGI artist based in Australia.">
-	<meta name="keywords" content="Sam Samuel Moorfield smoorfield@gmail.com">
-	<meta name="author" content="Samuel Moorfield">
+	<meta name="keywords" content="Sam Samuel Moorfield Australian Australia CGI VFX artist Houdini Maya 3DsMax film IMAX smoorfield@gmail.com space nebula science visualisation volumetrics particles">
+	<meta name="author" content="Sam Moorfield">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,30 +16,37 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/timeline.css">
-	
-	
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	
-	
+
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+<!-- INITIALIZE PORTFOLIO -->
 	<script>
-	$(document).ready(function(){
-		var my_posts = $("[rel=tooltip]");
+		$(document).ready(function(){
+			var my_posts = $("[rel=tooltip]");
 
-		var size = $(window).width();
-		for(i=0;i<my_posts.length;i++){
-			the_post = $(my_posts[i]);
+			var size = $(window).width();
+			for(i=0;i<my_posts.length;i++){
+				the_post = $(my_posts[i]);
 
-			if(the_post.hasClass('invert') && size >=767 ){
-				the_post.tooltip({ placement: 'left'});
-				the_post.css("cursor","pointer");
-			}else{
-				the_post.tooltip({ placement: 'rigth'});
-				the_post.css("cursor","pointer");
+				if(the_post.hasClass('invert') && size >=767 ){
+					the_post.tooltip({ placement: 'left'});
+					the_post.css("cursor","pointer");
+				}else{
+					the_post.tooltip({ placement: 'rigth'});
+					the_post.css("cursor","pointer");
+				}
 			}
-		}
-	});
+		});
 	</script>	
+	
+<!-- INITIALIZE MODAL DIALOG -->
+	<script>
+		function myFunction(){
+			var popup = document.getElementById("myPopup");
+			popup.classList.toggle("show");
+		}
+	</script>
 </head>
 
 <!-- BODY -->
@@ -61,37 +68,867 @@
 					<span class="icon icon-bar"></span>
 					<span class="icon icon-bar"></span>
 				</button>
+				
 <!-- NAVIGATION BAR LOGO -->
-				<a href="index.html" class="navbar-brand">SAM MOORFIELD</a>
+				<a href="#home" class="navbar-brand">SAM MOORFIELD</a>
 			</div>
+			
 <!-- NAVIGATION BAR SHORTCUTS -->
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class="smoothScroll" href="#home">Home</a></li>
 					<li><a class="smoothScroll" href="#work">Portfolio</a></li>
 					<li><a class="smoothScroll" href="#about">About Me</a></li>
-					<li><a class="smoothScroll" href="#snippets">Snippets</a></li>
+					<li><a class="smoothScroll" href="#scripts">Scripts</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 
-<section id="home">
+<!-- HOME SECTION-->
+	<section id="home">
 		<div class="container">
 			<div class="row">
-				<div>
-					<img src="images/Yosemite_Sam.png" class="wow fadeInUp img-responsive img-circle avatar" data-wow-delay="0.2s" alt="about image">
-				</div>
 				<div class="col-md-8 col-sm-8">
-					<h1 class="wow fadeInUp hi" data-wow-delay="0.6s">Website under construction</br></br>smoorfield@gmail.com</h1>
+					<h1 class="wow fadeInUp hi" data-wow-delay="0.6s">Hi, I'm Sam Moorfield, a CGI artist based in Australia. I've spent the past 15 years making and directing stereographic content for IMAX, documentaries and television.</br></br>smoorfield@gmail.com</h1>
 				</div>
 				<div class="showreel">
-				
-					
+					<iframe class="youtube" src="https://player.vimeo.com/video/306763240" width="880" height="495" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<img src="images/software.png" class="img-software" alt="software">
+					<div class="seework">
+						<div class="popup" onclick="myFunction()"><p class="p wow fadeInUp links" data-wow-delay="0.8s">Showreel Notes </p>
+							<span class="popuptext" id="myPopup"><p align="right" class="links">Close</p><p>The footage shown in this reel has been selected from a few of my most recent projects. These sequences were created for 8K IMAX 15/70 film as well as IMAX 3D digital laser, dome and television releases.</p><p>I have included a text overlay to highlight any aspects of these shots that were completed by others. Unless stated below, the work involved in the creation of these sequences, from concept and scene development to compositing and post production, is my own.</p>
+							<a href="https://www.youtube.com/watch?v=evTGbiVXp0Y"><strong class="links">Alternative YouTube Link</strong></a>						
+							</span>
+						</div>
+						<div class="seework">
+							<a href="#work" class="wow fadeInUp btn btn-default section-btn" data-wow-delay="1.0s">See some more of my work</a>					
+						</div>					
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+<!-- ***************** -->
+<!-- PORTFOLIO SECTION -->
+<!-- ***************** -->
+<section id="work">
+	<div class="container container-wide">
+		<div class="row row-wide">
+			<div class="col-md-12 col-sm-12">
+				<div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+					<h2>Portfolio Gallery</h2>
+					<p class="pcentered"><strong>A few screenshots from past projects<strong></p>
+				</div>
+			</div>
+
+<!-- NEBULA06 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_nebula06.jpg" title="<strong>PROJECT: </strong>The Story of Earth, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>A small part of a one billion voxel nebula simulation created using PhoenixFD." class="image-popup">
+						<img src="images/sammoorfield_nebula06.jpg" class="img-responsive" alt="nebula06">
+					</a>
+				</div>
+			</div>
+
+<!-- HIGHRISE02 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_highrise02.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements excluding some terrain colourization.<br><strong>DESCRIPTION:</strong> HiRISE terrain dataset visualizations. Data captured by Martian Reconnaissance Orbiter, processed using GDAL." class="image-popup">
+						<img src="images/sammoorfield_highrise02.jpg" class="img-responsive" alt="highrise02">
+					</a>
+				</div>
+			</div>
+
+<!-- CONVECTION01 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_convection01.jpg" title="<strong>PROJECT: </strong>The Story of Earth, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist <strong> CREDIT: </strong>All planet surface elements.<br><strong>DESCRIPTION: </strong>Earth molten core simulation transitions to a cooling surface flyover. Animated surface volumetrics. SRTM terrain data." class="image-popup">
+						<img src="images/sammoorfield_convection01.jpg" class="img-responsive" alt="convection01">
+					</a>
+				</div>
+			</div>
+
+<!-- SDO -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_sdo.jpg" title="<strong>PROJECT: </strong>The Story of Earth, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>Animated Solar Dynamics Observatory Sun data. Combined wavelengths AIA304 & AIA 193." class="image-popup">
+						<img src="images/sammoorfield_sdo.jpg" class="img-responsive" alt="sdo">
+					</a>
+				</div>
+			</div>
+
+<!-- PILLARSOFCREATION -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_pillarsofcreation.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements excluding some texture mask creation.<br><strong>DESCRIPTION: </strong>A 3D reconstruction of the Eagle Nebula based on a redshift dataset. Geometry embedded in a volumetric cloud/particles." class="image-popup">
+						<img src="images/sammoorfield_pillarsofcreation.jpg" class="img-responsive" alt="pillarsofcreation">
+					</a>
+				</div>
+			</div>
+
+<!-- MAGNETICFIELD -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_magneticfield.jpg" title="<strong>PROJECT: </strong>The Story of Earth, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements excluding magnetic field splines.<br><strong>DESCRIPTION: </strong>Phoenix FD volume simulation (~700m voxel) of solar wind impacting the Earths magnetic field." class="image-popup">
+						<img src="images/sammoorfield_magneticfield.jpg" class="img-responsive" alt="magneticfield">
+					</a>
+				</div>
+			</div>
+
+<!-- CURIOSITY02 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_curiosity02.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements excluding unshaded base rover model.<br><strong>DESCRIPTION: </strong>HiRISE Mars landscape reconstruction for the current location of the Curiosity Rover (Mars Lab)." class="image-popup">
+						<img src="images/sammoorfield_curiosity02.jpg" class="img-responsive" alt="curiosity02">
+					</a>
+				</div>
+			</div>
+
+<!-- HURL -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_hurl.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements excluding some model detailing.<br><strong>DESCRIPTION: </strong>An animated model of the HURL underwater laboratory descending through a volumetric particle field." class="image-popup">
+						<img src="images/sammoorfield_hurl.jpg" class="img-responsive" alt="hurl">
+					</a>
+				</div>
+			</div>
+
+<!-- PROTOPLANET -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_protoplanet.jpg" title="<strong>PROJECT: </strong>The Story of Earth, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>Concept for early Earth's molten crust. Partially constructed using Moon data courtesy of The Japan Aerospace Exploration Agency." class="image-popup">
+						<img src="images/sammoorfield_protoplanet.jpg" class="img-responsive" alt="protoplanet">
+					</a>
+				</div>
+			</div>
+
+<!-- DORA -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_dora.jpg" title="<strong>PROJECT: </strong>Dora the Explorer, Nickelodeon.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>Lunar Lander, Astronaut Model/Animation/Render<br><strong>DESCRIPTION: </strong>A Dora the Explorer commercial created to promote the the television show. A blend of 3D CGI and 2D composited plates." class="image-popup">
+						<img src="images/sammoorfield_dora.jpg" class="img-responsive" alt="dora">
+					</a>
+				</div>
+			</div>
+
+<!-- FRACTAL02 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_fractal02.jpg" title="<strong>PROJECT: </strong>RND<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>Concept art created using Fractals and Photoshop." class="image-popup">
+						<img src="images/sammoorfield_fractal02.jpg" class="img-responsive" alt="fractal02">
+					</a>
+				</div>
+			</div>
+
+<!-- EARTH -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_earth.jpg" title="<strong>PROJECT: </strong>The Story of Earth, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>An animated timelapse of Earth's surface as captured by the Himawari-8 space probe. Extensive frame interpolation using Twixtor." class="image-popup">
+						<img src="images/sammoorfield_earth.jpg" class="img-responsive" alt="earth">
+					</a>
+				</div>
+		   </div>
+
+<!-- MOONS01 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_moons01.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>A sequence of solar system moon shots recreating Voyager space probe photographs in 3D." class="image-popup">
+						<img src="images/sammoorfield_moons01.jpg" class="img-responsive" alt="moons01">
+					</a>
+				</div>
+			</div>
+
+<!-- NEBULA04 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_nebula04.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>A volumetric reconstruction of the '30 Doradus' nebula. Millions of stars." class="image-popup">
+						<img src="images/sammoorfield_nebula04.jpg" class="img-responsive" alt="nebula04">
+					</a>
+				</div>
+			</div>
+
+<!-- TERRAFORMED -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_terraformed.jpg" title="<strong>PROJECT: </strong>The Story of Earth, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>A concept design for an early terraformed Earth. Built using a mix of satellite composites and terrain SRTM data." class="image-popup">
+						<img src="images/sammoorfield_terraformed.jpg" class="img-responsive" alt="terraformed">
+					</a>
+				</div>
+			</div>
+
+<!-- MWA -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_mwa.jpg" title="<strong>PROJECT: </strong>MWA Visualisation, CAASTRO<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>Product visualizations for a telescope array MWA) to be build in Western Australia." class="image-popup">
+						<img src="images/sammoorfield_mwa.jpg" class="img-responsive" alt="mwa">
+					</a>
+				</div>
+		   </div>
+
+<!-- MARSEXPLORATION -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_marsexploration.jpg" title="<strong>PROJECT: </strong>Mars 3D, ACMI<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>Mar's surface reconstructions built using the Mola Dataset (whole planet) and HiRISE elevation data (surface details)." class="image-popup">
+						<img src="images/sammoorfield_marsexploration.jpg" class="img-responsive" alt="marsexploration">
+					</a>
+				</div>
+			</div>
+
+<!-- NEBULA05 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_nebula05.jpg" title="<strong>PROJECT: </strong>The Story of Earth, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>A distant view of a nebula simulation created using Phoenix FD. The entire simulation involved approx. one billion voxels." class="image-popup">
+						<img src="images/sammoorfield_nebula05.jpg" class="img-responsive" alt="nebula05">
+					</a>
+				</div>
+			</div>
+
+<!-- VOYAGER -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_voyager.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>Concept, Animation, Lighting, Planet, Render.<br><strong>DESCRIPTION: </strong>A one shot sequence from the surface of 'the golden record' to reveal the Voyager space probe." class="image-popup">
+						<img src="images/sammoorfield_voyager.jpg" class="img-responsive" alt="voyager">
+					</a>
+				</div>
+			</div>
+
+<!-- ENCELADUS -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_enceladus.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>The surface of Enceladus estimated using a height map generated from lighting information." class="image-popup">
+						<img src="images/sammoorfield_enceladus.jpg" class="img-responsive" alt="enceladus">
+					</a>
+				</div>
+			</div>
+
+<!-- NEBULA01 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_nebula01.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>The 'Horsehead Nebula' reconstructed as a volumetric field of stars and gas." class="image-popup">
+						<img src="images/sammoorfield_nebula01.jpg" class="img-responsive" alt="nebula01">
+					</a>
+				</div>
+			</div>
+
+<!-- HIGHRISE03 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_highrise03.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements excluding some terrain colourization.<br><strong>DESCRIPTION: </strong>A sequence of HiRISE data derived Martian flyovers." class="image-popup">
+						<img src="images/sammoorfield_highrise03.jpg" class="img-responsive" alt="highrise03">
+					</a>
+				</div>
+			</div>
+
+<!-- EARTHQUAKES -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_earthquakes.jpg" title="<strong>PROJECT: </strong>The Story of Earth, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>Concept, Direction, Grading.<br><strong>DESCRIPTION: </strong>A display of every earthquake mapped by mankind during the last 100 years. Data driven animation." class="image-popup">
+						<img src="images/sammoorfield_earthquakes.jpg" class="img-responsive" alt="earthquakes">
+					</a>
+				</div>
+			</div>
+
+<!-- NEBULA03 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_nebula03.jpg" title="<strong>PROJECT: </strong>The Search for Life in Space, IMAX.<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>A nebula created using Hubble imagery mixed with volumetrics and particles. " class="image-popup">
+						<img src="images/sammoorfield_nebula03.jpg" class="img-responsive" alt="nebula03">
+					</a>
+				</div>
+			</div>
+
+<!-- MISC01 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_misc01.jpg" title="<strong>PROJECT: </strong>AstroTour, Swinburne Astronomy Productions<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong> A mix of shots created as part of the AstroTour film package." class="image-popup">
+						<img src="images/sammoorfield_misc01.jpg" class="img-responsive" alt="misc01">
+					</a>
+				</div>
+			</div>
+
+<!-- SKA -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_ska.jpg" title="<strong>PROJECT: </strong>Square Kilometer Array Visualisation, SKA Organization<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>A SKA telescope visualisation created during its early concept stage. Used to promote Australia as a candidate site for the project." class="image-popup">
+						<img src="images/sammoorfield_ska.jpg" class="img-responsive" alt="ska">
+					</a>
+				</div>
+			</div>
+
+<!-- EARTH02 -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_earth02.jpg" title="<strong>PROJECT: </strong>Telescope, Swinburne Astronomy Productions<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>A seried of shots used in the film 'Telescope', exploring the evolution of the device." class="image-popup">
+						<img src="images/sammoorfield_earth02.jpg" class="img-responsive" alt="earth02">
+					</a>
+				</div>
+			</div>
+
+<!-- TELESCOPES -->
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="0.4s">
+				<div class="work-thumb">
+					<a href="images/sammoorfield_telescopes.jpg" title="<strong>PROJECT: </strong>EMMA/MWA/Parkes Telescope Visualisations, CAASTRO<strong> POSITION: </strong>CGI Director/VFX Artist<strong> CREDIT: </strong>All elements.<br><strong>DESCRIPTION: </strong>A series of telescope visualisations created to promote the development of new technologies for each project." class="image-popup">
+						<img src="images/sammoorfield_telescopes.jpg" class="img-responsive" alt="telescopes">
+					</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+		
+<!-- *********** -->
+<!-- RND SECTION -->
+<!-- *********** -->
+	<div class="container container-wide">
+		<div class="row row-wide">
+			<div class="col-md-12 col-sm-12 space-top">
+				<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+					<h2>RnD</h2>
+					<p class="pcentered"><strong>Past and ongoing RnD projects</strong></p>
+				</div>
+			</div>
+
+<!-- TREX02 -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_trex02.jpg" title="<strong>RND DESCRIPTION: </strong>ZBrush concept work for a dinosaur themed project." class="rnd-popup">
+						<img src="images/sammoorfield_trex02.jpg" class="img-responsive" alt="trex02">
+					</a>
+				</div>
+			</div>
+
+<!-- TREX01 -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_trex01.jpg" title="<strong>RND DESCRIPTION: </strong>ZBrush concept work for a dinosaur themed project." class="rnd-popup">
+						<img src="images/sammoorfield_trex01.jpg" class="img-responsive" alt="trex01">
+					</a>
+				</div>
+			</div>
+
+<!-- TREX03 -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_trex03.jpg" title="<strong>RND DESCRIPTION: </strong>ZBrush concept work for a dinosaur themed project." class="rnd-popup">
+						<img src="images/sammoorfield_trex03.jpg" class="img-responsive" alt="trex03">
+					</a>
+				</div>
+			</div>
+
+<!-- TARDIGRADE -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_tardigrade.jpg" title="<strong>RND DESCRIPTION: </strong>A Tardigrade model initially intended to be used in a film to demonstrate how life can surface is extreme conditions." class="rnd-popup">
+						<img src="images/sammoorfield_tardigrade.jpg" class="img-responsive" alt="tardigrade">
+					</a>
+				</div>
+			</div>
+
+<!-- FRACTAL01 -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_fractal01.jpg" title="<strong>RND DESCRIPTION: </strong>A fractal generated to explore the use of fractals in creating space themed environments." class="rnd-popup">
+						<img src="images/sammoorfield_fractal01.jpg" class="img-responsive" alt="fractal01">
+					</a>
+				</div>
+			</div>
+
+<!-- FRACTAL03 -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_fractal03.jpg" title="<strong>RND DESCRIPTION: </strong>A fractal generated to explore the use of fractals in creating space themed environments." class="rnd-popup">
+						<img src="images/sammoorfield_fractal03.jpg" class="img-responsive" alt="fractal03">
+					</a>
+				</div>
+			</div>
+
+<!-- HIGHRISE04 -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_highrise04.jpg" title="<strong>RND DESCRIPTION: </strong>A martian landscape created during the development of GDAL tools to process HiRISE terrain model and colour data." class="rnd-popup">
+						<img src="images/sammoorfield_highrise04.jpg" class="img-responsive" alt="highrise04">
+					</a>
+				</div>
+			</div>
+
+<!-- PROCEDURALPLANETS -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_proceduralplanets.jpg" title="<strong>RND DESCRIPTION: </strong>A series of procedurally generated planets/moons using various satellite based imagery." class="rnd-popup">
+						<img src="images/sammoorfield_proceduralplanets.jpg" class="img-responsive" alt="proceduralplanets">
+					</a>
+				</div>
+			</div>
+
+<!-- SATURN02 -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_saturn02.jpg" title="<strong>RND DESCRIPTION: </strong>Moon and plaet assets created for the IMAX prject 'The Search for Life in Space'." class="rnd-popup">
+						<img src="images/sammoorfield_saturn02.jpg" class="img-responsive" alt="saturn02">
+					</a>
+				</div>
+			</div>
+
+<!-- ROSETTA -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_rosetta.jpg" title="<strong>RND DESCRIPTION: </strong>A Rosetta space probe sequence. The textured probe model was supplied." class="rnd-popup">
+						<img src="images/sammoorfield_rosetta.jpg" class="img-responsive" alt="rosetta">
+					</a>
+				</div>
+			</div>
+
+<!-- JUNO -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_juno.jpg" title="<strong>RND DESCRIPTION: </strong>A Juno space probe sequence. The textured probe model was supplied." class="rnd-popup">
+						<img src="images/sammoorfield_juno.jpg" class="img-responsive" alt="juno">
+					</a>
+				</div>
+			</div>
+
+<!-- MESSENGER -->
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-experiments" data-wow-delay="0.4s">
+				<div class="experiments-thumb">
+					<a href="images/sammoorfield_messenger.jpg" title="<strong>RND DESCRIPTION: </strong>A messenger space probe sequence. The textured probe model was supplied." class="rnd-popup">
+						<img src="images/sammoorfield_messenger.jpg" class="img-responsive" alt="messenger">
+					</a>
+				</div>
+			</div>			
+		</div>			
+	</div>	
+</section>
+
+<!-- ABOUT ME SECTION -->
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-sm-12">
+				<div>
+					<h2 class="h2inv">About Me</h2>
+					<p><strong class="stronginv"><img class="profileimg img-circle avatar" src="images/profile-image.jpg" alt="Profile Image">Between 2012 and 2018 I have been managing the development of CGI content for giant screen productions. This involved leading a team of animators through the creation of stereographic sequences for 8K IMAX 15/70 film, 3D digital laser and dome formats. This content has also been mastered for traditional theatres, as well as television and Netflix release. My primary focus during this period has been delivering between 20-25min of rendered stereo content for each film. I have also been responsible for CGI scheduling and documentation.<strong></p>
+					<p><strong class="stronginv">From 2004 to 2018 my base of operations was the Center for Astrophysics and Supercomputing. Here I was involved with the day-to-day management of 3 generations of render farm used across 3 feature length IMAX productions and 9 short films.<strong></p>
+					<p><strong class="stronginv">My role extended to offline post-production supervisor for The Search for Life in Space and The Story of Earth. Here I worked on the stereoscopic post-processing of live-action content and the conforming of 3D and 2D cinema deliverables. This involved alignment, colour matching, shot clean-up and colour correction. My duties also involved 3D tracking, VFX creation and compositing, sky extensions, object removal, stabilisation and final project conforming for deliverables. I have been heavily involved with developing and managing a pipeline for both traditional film and current generation Laser formats.<strong><br><br></p>
+				</div>
+				
+				<h3 class="h3centeredinv">Filmography</h3>
+
+				<div class="container largeposters">
+					<ul class="timeline">
+						<li>
+							<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-film" rel="tooltip" title="Great Barrier Reef" id=""></i></a></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<img class="img-responsive fill" src="images/sammoorfield_poster_greatbarrierreef.jpg" />
+								</div>
+								<div class="timeline-body">
+									<p>A December Media film produced in association with Biopixel, Soundfirm, Film Victoria and Screen Queensland. Narrated by Eric Bana. Distributed by MacGillivray Freeman Films.</p>
+								</div>
+								<div class="timeline-footer">
+									<p class="timeline-cardname">Great Barrier Reef - IMAX</p>
+									<p class="timeline-cardname"><strong class="stronginvbold">CGI Generalist, VFX Development and Compositing</strong></p>
+								</div>
+							</div>
+						</li>
+
+						<li class="timeline-inverted">
+							<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-film invert" rel="tooltip" title="The Story of Earth" id=""></i></a></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<img class="img-responsive fill" src="images/sammoorfield_poster_thestoryofearth.jpg" />
+								</div>
+								<div class="timeline-body">
+									<p>The Story of Earth film is a documentary for giant screen and IMAX theatres directed by Russell Scott and written by Russell Scott and Wain Fimeri. Narrated by Rachel Ward, the film centres on how contemporary geology has potentially led to a new understanding of how life on Earth came to be.</p>
+								</div>
+								<div class="timeline-footer">
+									<p class="timeline-cardname">The Story of Earth - IMAX</p>
+									<p class="timeline-cardname"><strong class="stronginvbold">CGI Director, VFX and Offline Post Production Supervisor</strong></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-film" rel="tooltip" title="Great Barrier Reef" id=""></i></a></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<img class="img-responsive fill" src="images/sammoorfield_poster_thesearchforlifeinspace.jpg" />
+								</div>
+								<div class="timeline-body">
+									<p>The Search for Life in Space is a December Media film produced in association with Film Victoria Australia and Swinburne University of Technology. Narrated by Malcom Mcdowell, the film is distributed by MacGillivray Freeman Films.</p>
+								</div>
+								<div class="timeline-footer">
+									<p class="timeline-cardname">The Search for Life in Space - IMAX</p>
+									<p class="timeline-cardname"><strong class="stronginvbold">CGI Director, VFX and Offline Post Production Supervisor</strong></p>
+								</div>
+							</div>
+						</li>
+
+						<li class="timeline-inverted">
+							<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-film invert" rel="tooltip" title="Great Barrier Reef" id=""></i></a></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<img class="img-responsive fill" src="images/sammoorfield_poster_hiddenuniverse.jpg" />
+								</div>
+								<div class="timeline-body">
+									<p>Narrated by Golden Globe winner Miranda Richardson, Hidden Universe is a December Cinema Productions film produced in association with Film Victoria, Swinburne University of Technology, and the European Southern Observatory (ESO). Executive produced by Emmy-award-winning producer Tony Wright and George Adams and James Vernon.  Produced in association with MacGillivray Freeman Films. Produced by Stephen Amezdroz and written and directed by Russell Scott. </p>
+								</div>
+								<div class="timeline-footer">
+									<p class="timeline-cardname">Hidden Universe - IMAX</p>
+									<p class="timeline-cardname"><strong class="stronginvbold">CGI Team Leader, CGI Generalist</strong></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-film" rel="tooltip" title="Great Barrier Reef" id=""></i></a></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<img class="img-responsive fill" src="images/sammoorfield_poster_telescope.jpg" />
+								</div>
+								<div class="timeline-body">
+									<p> Telescope is a stereoscopic film detailing the evolution of astronomy. Narrated by Dr. Alan Duffy, Produced by the Swinburne Centre for Astrophysics and Supercomputing.</p>
+								</div>
+								<div class="timeline-footer">
+									<p class="timeline-cardname">Telescope - AstroTour</p>
+									<p class="timeline-cardname"><strong class="stronginvbold">CGI Director, CGI Generalist</strong></p>
+								</div>
+							</div>
+						</li>
+
+						<li class="timeline-inverted">
+							<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-film invert" rel="tooltip" title="Great Barrier Reef" id=""></i></a></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<img class="img-responsive fill" src="images/sammoorfield_poster_mars.jpg" />
+								</div>
+								<div class="timeline-body">
+									<p>Mars brings Martian data to life for the ACMI Star Voyager film exhibition. Produced by the Swinburne Centre for Astrophysics and Supercomputing.</p>
+								</div>
+								<div class="timeline-footer">
+									<p class="timeline-cardname">Mars - Australian Centre for the Moving Image (ACMI)</p>
+									<p class="timeline-cardname"><strong class="stronginvbold">CGI Director, CGI Generalist</strong></p>
+								</div>
+							</div>
+						</li>
+						<li class="clearfix" style="float: none;"></li>
+					</ul>
+				</div>
+				
+<!-- OTHER PROJECTS -->
+				<div class="section-title">
+					<h3 class="h3centeredinv nopadding">Other Projects</h3>
+				</div>
+
+				<div class="postercontainer">
+					<div class="posters">
+						<img class="posters5" img src="images/sammoorfield_poster_thediamondplanet.jpg" alt="poster" />
+						<img class="posters6" img src="images/sammoorfield_poster_extremeplaces.jpg" alt="poster" />
+						<img class="posters7" img src="images/sammoorfield_poster_biggerthanbig.jpg" alt="poster" />
+						<img class="posters8" img src="images/sammoorfield_poster_spinninginspace.jpg" alt="poster" />
+						<img class="posters9" img src="images/sammoorfield_poster_thelittlethings.jpg" alt="poster" />
+						<img class="posters10" img src="images/sammoorfield_poster_detective.jpg" alt="poster" />
+					</div>
+					<p class="pinv"><br>At the conclusion of my first year of University I was fortunate to receive a placement in The Centre for Astrophysics and Supercomputing's Vacaction Scholarship program. This program exposed animation and film making students to practical production experience. As I completed my studies, I continued to work as a Virtual Reality Animator working on a range of projects. In 2010 I took on a management position directing several internal and external client projects, as well as working with students participating in various university and high-school work experience programs.</p>
+				</div>
+			
+<!-- SKILL SET -->
+				<div class="section-title experience">
+					<h2 class="h2inv nopadding">Skill Set</h2>
+					<p><strong class="strongdark"><strong class="stronginvbold">Highest Formal Qualification:</strong><br>Bachelors Degree in Multimedia (Major: Media Studies) - 4 years<br>
+					(3D & 2D Digital Animation, Film Production, Motion Graphics, Creative Writing, Web Development, Media Theory)<br>
+					<i>Swinburne University of Technology</i></strong></p>
+					<p class="pinv"><strong class="stronginvbold">Recently Completed Training / Courses:</strong>
+					<br>Applied Houdini - Rigids I - Fundamentals
+					<br>Applied Houdini - Rigids II - Structure Destruction
+					<br>Applied Houdini - Particles I - Fundamentals
+					<br>Applied Houdini - Particles II - Velocity Fields
+					<br>Applied Houdini - Volumes I - Fundamentals
+					<br>Applied Houdini - Volumes II - Simulation
+					<br>Applied Houdini - Volumes III - Rendering
+					<br>Applied Houdini - Volumes IV - Interaction
+					<br>Applied Houdini - Volumes V - Combustion Simulation
+					<br>Applied Houdini - Volumes VI - Combustion Rendering
+					<br>Houdini Fast Track Vol 1 - Fundamentals
+					<br>Houdini Essential Training
+					<br>Houdini Intermediate Ocean FX
+					<br>Learning Maya After Knowing 3ds Max</p>
+				</div>
+			
+<!-- PRIMARY SOFTWARE -->
+			<h2 class="h2inv nopadding">Primary Software</h2>
+				<div class="divTable">
+					<div class="divTableBody">				
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_houdini.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Houdini FX</strong><br>
+								Houdini has replaced most add-on plugins that extended my dynamics toolset in other packages. I have primarily focused on Houdini's pyroclastic simulation, particle advection, fields and rigid body destruction. As a generalist, I appreciate the power of parametric modelling as well as the extended direct modelling toolset incorporated into Houdini 16.5. I have primarily been rendering with Mantra, however utilize Redshift GPU rendering for a fast iterative workflow when possible. I have ported several scripts that simplified the stereo pipeline over to Houdini as Python shelf tools and digital assets. I currently learn towards completing destructive direct modelling tasks in Maya.
+								</p>
+							</div>
+						</div>
+						
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_maya.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Maya</strong><br>
+								For most complex direct modelling and UV unwrapping tasks I currently focus on using Maya. Whilst I maintain a preference for 3DsMax's modifier stack approach to certain tasks, the speed afforded by Maya's marking menu system as well as recent updates to modelling and UV tools have proven to be valuable. I primarily use Redshift in Maya for rendering.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_3dsmax.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">3DsMax</strong><br>
+								I have been using Max since 2003. It has been the the primary 3D package used in the large scale productions I have been involved with between 2004 and 2017. I have worked with several pipeline developers and artists that have come from major Australian based VFX studios. As a result many pipeline tools, scripts and practices have been incorporated into my workflow over the years. Most notable of these are Render Pass Manager (RPM), VRay, Phoenix FD and Forest Pack Pro). Max has also served as a great platform for developing my own Maxscript tools to automate many of the repetitive or complex tasks unique to stereoscopic film production.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_zbrush.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Zbrush</strong><br>
+								I incorporate ZBrush into my workflow wherever possible as the sculpting experience for concept work or organic asset development is excellent. Houdini and Maya's re-topology tools are both excellent and pair well with my ZBrush workflow. I have mostly been using Zbrush in production for Nebula and Landscape sculpting, but have also utilized it for creature design and polypainting texture work.
+								</p>
+							</div>
+						</div>
+						
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_substancepainter.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Substance Painter</strong><br>
+								Substance Painter has become as a very useful tool for creating complex texture sets. The UDIM workflow has improved to a point that large screen digital assets can be textured to a high standard using substance's 'geometry aware' set of filters. The addition of Sparse Virual Textures to handle many high resolution UDIM channels has further encouraged me to favour Substance Painter's creative workflow.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_fusion.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Fusion</strong><br>
+								Blackmagic Fusion (previously Eyeon Fusion) has been my compositor of choice since 2012. Although now incorporated into Davinci Resolve, the standalone Fusion product continues to serve me well as a fast and clean node based compositor. I have created several Python and Lua scripts to simplify or extend Fusion’s native stereo workflow.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_resolve.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Resolve</strong><br>
+								I was introduced to Davinci Resolve as a suitable non-linear editor to use for conforming giant screen stereo productions. Resolve has proven to have a excellent stereo workflow toolset across 3 IMAX productions. The functionality as an editing, colour processing and delivery platform has proven to be very useful. I continue to use Resolve for delivering projects in many different formats inlcuding IMAX Laser, IMAX 15/70 film and DCI spec digital cinema. Across multiple large scale projects I have development of strong working knowledge of managing colour for CGI and Live Action RED footage. This extends to current Helium 8K footage processed in IPP2 and ACES workflows.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_redshift.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Redshift</strong><br>
+								With access to large CPU only render farms provided by the Centre for Astrophysics and Supercomputing, VRay proved itself as a great render package. Working as a freelance artist (5 nodes), I have found Redshift to be a great GPU accelerated alternative. Although I appreciate the native Houdini effects support offered by Mantra, I have found it to be a worthwhile exercise to adapt Houdini scenes for rendering with Redshift.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_vray.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Vray</strong><br>
+								I transitioned from Mental Ray to VRay (1.4) in 2005. I continued to almost exclusively use VRay until 2018 (3.6). 8K 3D IMAX frames are 8192x6144px per eye at 24fps, as a result I have become very familiar with the best workflow for optimizing large scenes for efficient render passes. VRay has been the primary render installed across render farms I have managed.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_phoenix.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Phoenix FD</strong><br>
+								After a period using Fume FX and Krakatoa for space based simulations (volumetric nebula, galaxies etc) I transitioned to the overhauled version of Phoenix FD (v3.0) and was extremely impressed with the artist friendly workflow and much improved voxel and flip based simulation engines. Phoenix quickly transitioned from a tool intended for a single shot, to being used in some way on almost every sequence. I have provided feedback across nightly builds of Phoenix between 2014-2018 and seen several requested workflow enhancements implemented into the plugin. 
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_photoshop.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Photoshop</strong><br>
+								Adobe Photoshop has been at the core of much of my graphics, painting, texture and storyboard work since 2003.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_aftereffects.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">After Effects</strong><br>
+								Adobe After Effects was my compositing package of choice pre-2012 and was used on the IMAX project Hidden Universe. Whilst I now prefer the workflow offered by a node-based compositor (especially for stereo work), I continue to use After Effects for developing motion graphics and 2D animation. I also find After Effects to be an efficient option for processing frames across non GPU equipped render clusters as a command line tool.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_premiere.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Premiere Pro</strong><br>
+								The first IMAX project I was involved with, Hidden Universe (2012), was conformed in Premiere Pro. Several short films prior to this were also edited and conformed using Premiere. Whilst I consider myself to be very familiar with the package, I find Davinci Resolve has replaced Premiere where GPU accelerated NLE is an option.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_deadline.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Deadline</strong><br>
+								Whilst Muster was the render manager deployed across the render farm at The Center for Astrophysics and Supercomputing, I exclusively use Deadline across my personal render cluster. I have a functional understanding of how to set up and configure a render environment with submission tools for Autodesk, Blackmagic and Adobe products. I also have experience setting up custom sanity checks specific to my current pipeline.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_muster.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Muster</strong><br>
+								I have managed 3 render farms over 7 years that use Muster as the primary dispatch and management system. Whilst I do not choose to use Muster currently, It did offer a deep level of management. Custom in-house tools to manage a stereo rendering workflow offered streamlined render management.
+								</p>
+							</div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableThumb"><img src="images/software_vue.png" alt="software"></div>
+							<div class="divTableCell"><p class="pinv"><strong class="stronginvbold">Vue</strong><br>
+								I have experience using Vue X-Stream with 3DsMax and Vue as a standalone product. I currently prefer to use Forest Pack Pro in 3DsMax, Houdini Terrain Tools, or Maya MASH networks to develop large instanced landscapes. I consider Vue to be a useful tool for developing static terrain matte paintings and Ozone driven sky plates.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- SCRIPTS SECTION -->
+<section id="scripts">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="wow fadeInUp section-title" data-wow-delay="0.1s">
+					<h2>Scripts</h2>
+					<p class="pcentered"><strong>Productivity Scripts / Tools / Techniques</strong></p>
+				</div>
+			</div>		
+
+			<div class="divTable">
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="downloads/stereoSettingsCalculator.ms"><img src="images/sammoorfield_snippet_3dsmax_stereosettingscalculator.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">3ds Max Stereo Settings Calculator</strong><br>
+							Generates optimal stereo camera settings based on scene & camera settings.<br>
+							This maxscript uses your current render settings along with the current active camera view to generate stereo settings based on the desired percentage of screen space. Near and Far guides are generated that represent safe limits for the supplied target stereo strength.</p>
+						</div>
+					</div>					
+				</div>
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="downloads/pFlowToMesh.ms"><img src="images/sammoorfield_snippet_3dsmax_pflowtomesh.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">3ds Max Plow to Mesh</strong><br>
+							Creates a mesh object based on the selected PFlow object geometry.<br>
+							A selected PFlow object is meshed using Mesher and then converted into an editable poly object. The PFlow is then disabled. A useful script for one-click creation of static PFlow generated geometry.</p>
+						</div>
+					</div>					
+				</div>
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="downloads/listVrayProperties.ms"><img src="images/sammoorfield_snippet_3dsmax_listvrayproperties.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">3ds Max VRay Property Lister</strong><br>
+							Prints all possible VRay properties to the listener.<br>
+							A super simple Maxscript, but nice to have around when working with VRay. Useful for accessing VRay properties via a script.</p>
+						</div>
+					</div>					
+				</div>
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="downloads/S  SaveTimestampAutoBackup.py"><img src="images/sammoorfield_snippet_fusion_autobackup.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">Fusion Timestamp AutoBackup</strong><br>
+							Saves a timestamped copy of your .comp to an AUTOBACKUP folder.<br>
+							This script will append your .comp name with the current date and time and then store it in your preferred AUTOBACKUP location. The scene is also saved as normal without incrementing your current version, so you can replace the default SAVE with this script to maintain a safe version history with each save.</p>
+						</div>
+					</div>					
+				</div>					
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="downloads/+  SaveIncremented.py"><img src="images/sammoorfield_snippet_fusion_incrementalsave.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">Fusion Incremental Save</strong><br>
+							Saves the .comp with an incremented version number.<br>
+							A simple but important script to increment a compositions version number when required. Currently configured to use the version naming format [compname]_v###.comp.</p>
+						</div>
+					</div>					
+				</div>
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="downloads/+Sy  SaveAndSyncVersion.py"><img src="images/sammoorfield_snippet_fusion_takesync.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">Fusion Increment File Name & Sync Saver Version</strong><br>
+							Makes sure a incremented file version is synced with your current output version.<br>
+							Similar to the Incremental Save, this script also syncs the version of any saver output paths. Useful if your workflow requires the version of a composition to be matched with the version of an export.</p>
+						</div>
+					</div>					
+				</div>
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="downloads/ToggleCombinersOrSplitters.7z"><img src="images/sammoorfield_snippet_fusion_togglecombinerssplitters.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">Fusion Toggle Combiners or Splitters</strong><br>
+							Enables or disables all splitters or combiners depending on their current state.<br>
+							Combiners and Splitter nodes can be used to control the flow of stereo pairs through a composition. Being able to toggle these on mass allows you to develop a stereo composition using the left eye only and then quickly toggle the flow to process both eyes.</p>
+						</div>
+					</div>					
+				</div>
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="downloads/reL  RefreshLoaders.py"><img src="images/sammoorfield_snippet_fusion_reloadloaders.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">Fusion Refresh Loaders</strong><br>
+							Reloads the source material for a selected loader.<br>
+							As new renders come in, loaders often need to be refreshed to extend their in | out points. If durations don't change, frames may remain cached even when they no longer exist. Select the loader(s) and activate this script to fully refresh the input material.</p>
+						</div>
+					</div>					
+				</div>
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="downloads/cln cleanViewer.py"><img src="images/sammoorfield_snippet_fusion_cleanviewers.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">Fusion Clean Viewers</strong><br>
+							Removes cached data in the A & B frame buffers.<br>
+							Sometimes frame buffer updates can slow due to data being processed for a hidden channel (A|B). This script wipes the buffers allowing you to start fresh.</p>
+						</div>
+					</div>					
+				</div>
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="downloads/Wig  StereoWiggle.py"><img src="images/sammoorfield_snippet_fusion_stereowiggle.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">Fusion Stereo Wiggle</strong><br>
+							Automatic animated switching of the A | B frame buffer channels.<br>
+							Every program used for stereographic film production needs a stereo wiggle feature. Load the A frame buffer channel with the LEFT EYE and the B channel with the RIGHT EYE. This script uses th RAM cached image data to show you a animated 'wiggle' of the stereo pair. A handy tool for visualizing depth in a 2D/mono development environment.</p>
+						</div>
+					</div>					
+				</div>				
+				<div class="divTableBody">					
+					<div class="divTableRow wow fadeInUp" data-wow-delay="0.4s">
+						<div class="divTableThumb">
+							<a href="https://docs.google.com/spreadsheets/d/1NPcGZ-AmhThei4izRXSRK8-yO26rhvGLlNij0m_W0l8/edit?usp=sharing"><img src="images/sammoorfield_snippet_sheets_stereocalculator.png" class="img-responsive" alt="snippet"></a>
+						</div>
+						<div class="divTableCell"><p class="p"><strong class="strongbold">Google Sheets Stereo Calculator</strong><br>
+							A calculator to quickly establish stereo camera settings.<br>
+							Appropriate stereo camera settings are dependent on the a range of factors. This calculator accounts for the field of view of both the camera system.</p>
+						</div>
+					</div>					
+				</div>					
+			</div>
+		</div>
+	</div>
+</section>
 
 <!-- SCRIPTS -->
 <script src="js/jquery.js"></script>
@@ -102,7 +939,6 @@
 <script src="js/magnific-popup-options.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
-
 
 </body>
 </html>
