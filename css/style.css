@@ -1252,7 +1252,7 @@ img[class^=posters] {
 @media all and (max-width: 767px) and (min-width: 50px) {
 
 h1.hi {
-	font-size: 15px;
+	font-size: 16px;
 }
 
 #home .youtube {
@@ -1357,7 +1357,7 @@ background-size: 120% 120%;
 
 .section-btn {
 margin-top: 15px;
-padding: 9px 15px 9px 15px;
+padding: 18px 20px 12px 18px;
 }
 
 	
