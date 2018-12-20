@@ -1090,6 +1090,22 @@ h2.compress {
 	/* max-width: 470px; */
 }
 
+.container-full {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.col-full {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.timeline-text {
+	font-size: 14px;
+}
+
+
+
 .profileimg {
 	width: 150px;
 }
