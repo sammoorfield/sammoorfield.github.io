@@ -1255,6 +1255,14 @@ h1.hi {
 	font-size: 1em;
 }
 
+h2.compress {
+	padding-bottom: 5px;
+}
+
+.section-title {
+	padding-bottom: 10px;
+}
+
 #home .youtube {
 	width:80vw;
 	height: 45vw;
