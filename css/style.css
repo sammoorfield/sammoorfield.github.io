@@ -1095,6 +1095,11 @@ h2.compress {
 	padding-left: 0px;
 }
 
+.timeline {
+	margin-left: -18px;
+	margin-right: -18px;
+}
+
 .col-full {
 	padding-right: 0px;
 	padding-left: 0px;
@@ -1103,8 +1108,6 @@ h2.compress {
 .timeline-text {
 	font-size: 14px;
 }
-
-
 
 .profileimg {
 	width: 150px;
