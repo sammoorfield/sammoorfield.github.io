@@ -1252,7 +1252,7 @@ img[class^=posters] {
 @media all and (max-width: 767px) and (min-width: 50px) {
 
 h1.hi {
-	font-size: 14px;
+	font-size: 15px;
 }
 
 #home .youtube {
@@ -1322,11 +1322,7 @@ padding-top: 5px;
 }
 
 
-#home {
-  padding-top: 95px;  
 
-	
-}
 
 
 .navbar-collapse {
@@ -1358,8 +1354,30 @@ background-size: 120% 120%;
 	width: 50px;
 	height: 50px;
 }
+
+.section-btn {
+margin-top: 15px;
+padding: 9px 15px 9px 15px;
+}
+
 	
-  
+#home {
+  padding-top: 95px;  	
+}
+
+#work {
+    padding-top: 20px;
+}
+
+#about {
+    padding-top: 20px;
+}
+
+#scripts {
+    padding-top: 20px;
+}
+
+ 
 }
 
 /*END OF RESPONSIVE*/
