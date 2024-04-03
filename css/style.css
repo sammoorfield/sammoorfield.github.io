@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400');
 
 body {
-	background-image: url("../images/bg_dark.jpg");
+	background-image: url("../images/site/bg_dark.jpg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -33,7 +33,7 @@ html, body {
 }
 
 .row{
-	padding-bottom: 70px;
+	padding-bottom: 60px;
 }
 
 .img-software {
@@ -41,6 +41,14 @@ html, body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.emailIcon {
+	width: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 14px;
 }
 
 /*---------------------------------------
@@ -83,6 +91,12 @@ h2.h2inv {
 h3.h3centeredinv {
 	color: #000;
 	text-align: center;
+	font-size: 25px;
+}
+
+h2.compress {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 h4 {
@@ -116,11 +130,21 @@ p.pcenteredinv {
 
 p.pinv {
 	color: #000;
+	margin: 0 0 0px;
+}
+
+p.parainv {
+	color: #000;
+	margin: 0 0 10px;
 }
 
 strong, span {
 	color: #dedede;
 	font-weight: normal;
+}
+
+strongB {
+	font-weight: 600;
 }
 
 strong.stronginv, span.spaninv {
@@ -134,7 +158,8 @@ strong.strongdark {
 
 strong.stronginvbold, span.spaninv {
 	color: #000;
-	font-weight: 500;
+	font-weight: 800;
+	font-size: 16px;
 }
 
 strong.strongbold {
@@ -180,7 +205,7 @@ html{
 a {
 	color: #dedede;
 	-webkit-transition: 0.5s;
-	transition: 0.5s;
+	transition: 0s;
 	text-decoration: none !important;
 }
 
@@ -213,10 +238,10 @@ a:hover, a:active, a:focus {
 	padding-bottom: 32px;
 }
 
-#about, #work, #contact {
+#about, #cgi, #contact {
 	position: relative;
 	padding-top: 80px;
-	padding-bottom: 80px;
+
 }
 
 img.fill {
@@ -311,15 +336,16 @@ img.fill {
 	border-width: 0 0 0px;
 	margin-bottom: 0;
 	background-color: rgba(0,0,0,1);
-	padding-top: 50px;
+	padding-top: 0px;
 }
 
 .custom-navbar .navbar-brand {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 2.6em;
-	font-weight: 700;
+	font-family: Montserrat,sans-serif;
+	font-size: 3em;
+	font-weight: 800;
 	padding-top: 20px;
 	letter-spacing: 5px;
+	color: #dedede;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
@@ -388,7 +414,7 @@ img.fill {
 
 .custom-navbar.top-nav-collapse {
 	background: #000000;
-	padding: 5px 0;
+	padding: 0px 0;
 	background-color: #000000;
 }
 
@@ -438,14 +464,15 @@ img.fill {
 	background-color: rgba(255, 255, 255, 0.075);
 }
 
-#home .showreel {
+#cgi .showreel {
 	width: 100%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	padding-bottom: 40px;
 }
 
-#home .youtube {
+#cgi .youtube {
 	width:80vw;
 	height: 45vw;
 	max-width: 880px;
@@ -460,6 +487,48 @@ img.fill {
 	max-width: 880px;
 }
 
+.gallery {
+	padding-bottom: 20px;	
+}
+
+/*---------------------------------------
+	VFX section
+-----------------------------------------*/
+#vfx {
+	border-top: 1px solid #585858;
+	padding-top: 80px;
+	/*min-height: 100%;*/
+}
+
+
+#vfx .section-title {
+	padding-bottom: 32px;
+}
+
+#vfx .h2 {
+	color: #000;
+}
+
+#vfx .showreel {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 40px;
+}
+
+#vfx .youtube {
+	width:80vw;
+	height: 45vw;
+	max-width: 880px;
+	max-height: 495px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
 /*---------------------------------------
 	About section
 -----------------------------------------*/
@@ -467,13 +536,18 @@ img.fill {
 #about {
 	border-top: 1px solid #585858;
 	padding-top: 80px;
-	padding-bottom: 60px;
+	padding-bottom: 0px;
 	background: #dedede;
 	min-height: 100%;
 }
 
 #about .section-title {
-	padding-bottom: 32px;
+	padding-bottom: 0px;
+}
+
+#about .section-title-nopadding {
+	padding-bottom: 10px;
+	padding-top: 20px;
 }
 
 #about .col-md-4 a {
@@ -499,6 +573,10 @@ img.fill {
 
 #about .nopadding {
 	padding-bottom: 0px;
+}
+
+#about .email {
+	margin-top: 0px;
 }
 
 /*---------------------------------------
@@ -533,17 +611,16 @@ img.fill {
 }
 
 /*---------------------------------------
-	Work section
+	cgi and vfx sections
 -----------------------------------------*/
 
-#work {
-	border-top: 1px solid #585858;
-	padding-top: 80px;
-	padding-bottom: 60px;
-	min-height: 100%;
+#cgi, #vfx {
+	
+	padding-top: 50px;
+	/*min-height: 100%;*/
 }
 
-#work .work-thumb {
+#cgi .cgi-thumb, #vfx .cgi-thumb {
 	border-radius: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -552,22 +629,26 @@ img.fill {
 	overflow: hidden;
 	position: relative;
 	top: 0;
-	-webkit-transition: all ease-in-out 0.4s;
-	transition: all ease-in-out 0.4s;
+	-webkit-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
 }
 
-#work .work-thumb:hover {
+#cgi .cgi-thumb:hover, #vfx .cgi-thumb:hover {
 	background: #000;
-	box-shadow: 0px 16px 22px 0px rgba(0, 0, 0, 0.8);
+	/*Horizontal, Vertical, Softness, */
+	box-shadow: 0px 16px 22px 0px rgba(0, 0, 0, 0.6);
 	top: -4px;
+	/*transform: scale(1.03);*/
+	/*z-index: 100;*/
+	
 }
 
-#work .work-thumb img {
+#cgi .cgi-thumb img, #vfx .cgi-thumb img {
 	border-radius: 0px;
 	width: 100%;
 }
 
-#work .experiments-thumb {
+#cgi .experiments-thumb, #vfx .experiments-thumb {
 	border-radius: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -580,13 +661,13 @@ img.fill {
 	transition: all ease-in-out 0.4s;
 }
 
-#work .experiments-thumb:hover {
+#cgi .experiments-thumb:hover, #vfx .experiments-thumb:hover {
 	background: #000;
 	box-shadow: 0px 16px 22px 0px rgba(0, 0, 0, 0.8);
 	top: -5px;
 }
 
-#work .experiments-thumb img {
+#cgi .experiments-thumb img, #vfx .experiments-thumb img {
 	border-radius: 0px;
 	width: 100%;  
 }
@@ -722,6 +803,7 @@ img.fill {
 	bottom: 125%;
 	left: 50%;
 	margin-left: -275px;
+
 }
 
 /* Popup arrow */
@@ -739,8 +821,8 @@ img.fill {
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
 	visibility: visible;
-	-webkit-animation: fadeIn 1s;
-	animation: fadeIn 1s
+	-webkit-animation: fadeIn 0.25s;
+	animation: fadeIn 0.25s
 }
 
 /* Add animation (fade in the popup) */
@@ -759,15 +841,17 @@ img.fill {
 }
 
 .posters {
-	width:100%;
-	position: relative;
 	text-align: center;
+	font-size: 0px;
 }
 
+/* SMALL POSTERS */
 img[class^=posters] {
 	display: inline-block;
 	vertical-align: middle;
-	width: calc(93.0%/6);
+	width: calc(100%/11);	
+	padding: 2px;
+	padding-bottom: 20px;
 }
 
 /* DivTable */
@@ -779,8 +863,9 @@ img[class^=posters] {
 	display: table;
 	width: 100%;
 }
-.divTableRow {
-	display: table-row;
+.divTableRow {	
+	border-top: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
 }
 .divTableHeading {
 	background-color: #EEE;
@@ -790,6 +875,15 @@ img[class^=posters] {
 	display: table-cell;
 	padding: 3px 10px;
 	vertical-align: middle;
+}
+
+.divExperienceCell {
+	display: table-cell;
+	padding: 10px 10px;
+	vertical-align: middle;
+
+
+	
 }
 .divTableHeading {
 	background-color: #EEE;
@@ -810,6 +904,18 @@ img[class^=posters] {
 	padding: 10px 10px;
 	width: 150px;
 	height: 100px;
+}
+
+.divTableFilmThumb {
+	display: table-cell;
+	padding: 4px 4px;
+	width: 150px;
+	height: 100px;
+
+}
+
+.filmThumb {
+	width: 200px;
 }
 
 .divTableProfile{
@@ -852,7 +958,7 @@ img[class^=posters] {
 	max-width:16.66%;
 }
 
-#work .col-experiments {
+#cgi .col-experiments {
 	max-width:16.66%;
 }
 
@@ -912,11 +1018,6 @@ img[class^=posters] {
 
 @media all and (max-width: 1919px) and (min-width: 1200px) {
 
-#home .youtube {
-	max-width: 700px;
-	max-height: 393.75px;
-}
-
 .img-software {
 	max-width: 700px;
 }
@@ -926,7 +1027,7 @@ img[class^=posters] {
 } 
 
 .custom-navbar .nav li a{
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .col-sm-4 {
@@ -941,7 +1042,7 @@ img[class^=posters] {
 	max-width:16.66%;
 }
 
-#work .col-experiments {
+#cgi .col-experiments {
 	max-width:16.66%;
 }
 
@@ -955,11 +1056,6 @@ img[class^=posters] {
 
 @media all and (max-width: 1199px) and (min-width: 992px) {
 
-#home .youtube {
-	max-width: 500px;
-	max-height: 281.25px;
-}
-
 .img-software {
 	max-width: 500px;
 }
@@ -969,7 +1065,7 @@ img[class^=posters] {
 } 
 
 .custom-navbar .nav li a{
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .col-sm-4 {
@@ -984,7 +1080,7 @@ img[class^=posters] {
 	max-width:16.66%;
 }
 
-#work .col-experiments {
+#cgi .col-experiments {
 	max-width:16.66%;
 }
 
@@ -1002,9 +1098,8 @@ img[class^=posters] {
 
 @media all and (max-width: 991px) and (min-width: 768px) {
 
-#home .youtube {
-	max-width: 500px;
-	max-height: 281.25px;
+h1.hi {
+	font-size: 19px;
 }
 
 .img-software {
@@ -1026,7 +1121,7 @@ img[class^=posters] {
 }
 
 .custom-navbar .nav li a{
-	font-size: 10.5px;
+	font-size: 20px;
 }
 .custom-navbar .navbar-brand {
 	font-size: 1.8em;
@@ -1050,7 +1145,7 @@ img[class^=posters] {
 @media all and (max-width: 767px) and (min-width: 50px) {
 
 h1.hi {
-	font-size: 1em;
+	font-size: 18px;
 }
 
 h2.compress {
@@ -1061,7 +1156,7 @@ h2.compress {
 	padding-bottom: 10px;
 }
 
-#home .youtube {
+#cgi .youtube {
 	width:80vw;
 	height: 45vw;
 }
@@ -1119,7 +1214,7 @@ h2.compress {
 	padding-bottom: 8px;
 }
 
-.work-thumb:hover {
+.cgi-thumb:hover {
 	top: 0px;
 }
 
@@ -1128,11 +1223,11 @@ h2.compress {
 } 
 
 .custom-navbar {
-	padding-top: 25px;
+	padding-top: 0px;
 }
 
 .custom-navbar .navbar-brand {
-	font-size: 6vw;
+	font-size: 2.5em;
 	padding-top: 16px;
 }
 
@@ -1150,8 +1245,13 @@ h2.compress {
 }
 
 .divTableThumb {
-	width: 10px;
+	width: 15px;
 	height: 10px;
+}
+
+.divTableFilmThumb {
+	width: 150px;
+	height: 100px;
 }
 
 .squaresmall {
@@ -1169,12 +1269,8 @@ h2.compress {
 	padding: 10px 20px 10px 20px;
 }
 
-#home {
+#cgi {
 	padding-top: 95px;
-}
-
-#work {
-	padding-top: 20px;
 }
 
 #about {
@@ -1186,10 +1282,6 @@ h2.compress {
 } 
 }
 /*END OF RESPONSIVE*/
-
-
-
-
 
 
 

@@ -147,7 +147,7 @@ button::-moz-focus-inner {
 	top: 0;
 	text-decoration: none;
 	text-align: center;
-	opacity: 0.65;
+	opacity: 0.45;
 	padding: 0 0 18px 10px;
 	color: #FFF;
 	font-style: normal;
@@ -155,8 +155,7 @@ button::-moz-focus-inner {
 	font-family: Arial, Baskerville, monospace;
 }
 
-.mfp-close:hover,
-.mfp-close:focus {
+.mfp-close:hover {
 	opacity: 1;
 }
 
@@ -189,7 +188,7 @@ button::-moz-focus-inner {
 
 .mfp-arrow {
 	position: absolute;
-	opacity: 0.65;
+	opacity: 0.35;
 	margin: 0;
 	top: 50%;
 	margin-top: -55px;
@@ -201,10 +200,10 @@ button::-moz-focus-inner {
 
 .mfp-arrow:active {
 	margin-top: -54px;
+
 }
 
-.mfp-arrow:hover,
-.mfp-arrow:focus {
+.mfp-arrow:hover {
 	opacity: 1;
 }
 
@@ -229,9 +228,8 @@ button::-moz-focus-inner {
 }
 
 .mfp-arrow:before {
-	border-top-width: 21px;
-	border-bottom-width: 21px;
-	opacity: 0.7;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
 }
 
 .mfp-arrow-left {
