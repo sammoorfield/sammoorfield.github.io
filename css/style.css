@@ -494,18 +494,18 @@ img.fill {
 /*---------------------------------------
 	VFX section
 -----------------------------------------*/
-#vfx {
+#vfx, #modelling {
 	border-top: 1px solid #585858;
 	padding-top: 80px;
 	/*min-height: 100%;*/
 }
 
 
-#vfx .section-title {
+#vfx .section-title, #modelling .section-title {
 	padding-bottom: 32px;
 }
 
-#vfx .h2 {
+#vfx .h2, #modelling .h2 {
 	color: #000;
 }
 
@@ -620,7 +620,7 @@ img.fill {
 	/*min-height: 100%;*/
 }
 
-#cgi .cgi-thumb, #vfx .cgi-thumb {
+#cgi .cgi-thumb, #vfx .cgi-thumb, #modelling .cgi-thumb {
 	border-radius: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -633,7 +633,7 @@ img.fill {
 	transition: all ease-in-out 0.2s;
 }
 
-#cgi .cgi-thumb:hover, #vfx .cgi-thumb:hover {
+#cgi .cgi-thumb:hover, #vfx .cgi-thumb:hover, #modelling .cgi-thumb:hover {
 	background: #000;
 	/*Horizontal, Vertical, Softness, */
 	box-shadow: 0px 16px 22px 0px rgba(0, 0, 0, 0.6);
@@ -643,12 +643,12 @@ img.fill {
 	
 }
 
-#cgi .cgi-thumb img, #vfx .cgi-thumb img {
+#cgi .cgi-thumb img, #vfx .cgi-thumb img, #modelling .cgi-thumb img {
 	border-radius: 0px;
 	width: 100%;
 }
 
-#cgi .experiments-thumb, #vfx .experiments-thumb {
+#cgi .experiments-thumb, #vfx .experiments-thumb, #modelling .experiments-thumb {
 	border-radius: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -661,13 +661,13 @@ img.fill {
 	transition: all ease-in-out 0.4s;
 }
 
-#cgi .experiments-thumb:hover, #vfx .experiments-thumb:hover {
+#cgi .experiments-thumb:hover, #vfx .experiments-thumb:hover, #modelling .experiments-thumb:hover {
 	background: #000;
 	box-shadow: 0px 16px 22px 0px rgba(0, 0, 0, 0.8);
 	top: -5px;
 }
 
-#cgi .experiments-thumb img, #vfx .experiments-thumb img {
+#cgi .experiments-thumb img, #vfx .experiments-thumb img, #modelling .experiments-thumb img {
 	border-radius: 0px;
 	width: 100%;  
 }
@@ -1227,7 +1227,7 @@ h2.compress {
 }
 
 .custom-navbar .navbar-brand {
-	font-size: 2.5em;
+	font-size: 5vw;
 	padding-top: 16px;
 }
 
@@ -1250,8 +1250,12 @@ h2.compress {
 }
 
 .divTableFilmThumb {
-	width: 150px;
-	height: 100px;
+	width: 40vw;
+	#height: 100px;
+}
+
+.filmThumb {
+	width: 40vw;
 }
 
 .squaresmall {
@@ -1268,6 +1272,16 @@ h2.compress {
 	margin-top: 15px;
 	padding: 10px 20px 10px 20px;
 }
+
+/* SMALL POSTERS */
+img[class^=posters] {
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(180%/11);	
+	padding: 2px;
+	padding-bottom: 2px;
+}
+
 
 #cgi {
 	padding-top: 95px;
