@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-mono: "Noto Sans Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-studio-bg: #0f1115;
+  --color-studio-surface: #1a1d23;
+  --color-studio-border: #2a2e37;
+  --color-studio-text: #e2e4e9;
+  --color-studio-muted: #8b919e;
+  --color-studio-accent: #4a90e2;
+}
+
+@layer base {
+  body {
+    @apply bg-studio-bg text-studio-text antialiased font-sans text-base;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-studio-border rounded-full hover:bg-studio-muted/20 transition-colors;
+  }
+}
+
+@layer utilities {
+  .minimal-shadow {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+}

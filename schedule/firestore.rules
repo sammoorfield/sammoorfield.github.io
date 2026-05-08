@@ -1,0 +1,86 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // --- Global Helpers ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(ownerId) {
+      return isSignedIn() && request.auth.uid == ownerId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_-]+$');
+    }
+
+    function isNumeric(val) {
+      return val is int || val is float;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // --- Project Validation ---
+    function isValidProject(p) {
+      return p.get('name', '') is string && p.get('name', '').size() > 0
+          && p.get('ownerId', '') == request.auth.uid;
+    }
+
+    function isProjectOwner(projId) {
+      return isSignedIn() && get(/databases/$(database)/documents/projects/$(projId)).data.get('ownerId', '') == request.auth.uid;
+    }
+
+    // --- Matches ---
+    
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    match /projects/{projectId} {
+      allow create: if isSignedIn() 
+                    && isValidId(projectId)
+                    && isValidProject(incoming());
+      
+      allow read: if isOwner(existing().get('ownerId', ''));
+      
+      allow update: if isOwner(existing().get('ownerId', ''))
+                    && isValidProject(incoming());
+
+      allow delete: if isOwner(existing().get('ownerId', ''));
+
+      match /shots/{shotId} {
+        allow read: if isProjectOwner(projectId);
+        
+        allow create: if isProjectOwner(projectId)
+                      && isValidId(shotId)
+                      && incoming().get('projectId', '') == projectId;
+
+        allow update: if isProjectOwner(projectId)
+                      && (incoming().get('projectId', '') == projectId || !incoming().keys().hasAny(['projectId']));
+
+        allow delete: if isProjectOwner(projectId);
+      }
+
+      match /tasks/{taskId} {
+        allow read: if isProjectOwner(projectId);
+        
+        allow create: if isProjectOwner(projectId)
+                      && isValidId(taskId)
+                      && incoming().get('projectId', '') == projectId;
+
+        allow update: if isProjectOwner(projectId)
+                      && (incoming().get('projectId', '') == projectId || !incoming().keys().hasAny(['projectId']));
+
+        allow delete: if isProjectOwner(projectId);
+      }
+    }
+  }
+}
