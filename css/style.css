@@ -73,11 +73,6 @@ h1.hi {
 	font-size: 22px;
 }
 
-#years {
-	font-weight: 200;
-	font-size: 22px;
-}
-
 h2 {
 	color: #dedede;
 	font-size: 40px;
@@ -145,6 +140,10 @@ p.parainv {
 
 strong, span {
 	color: #dedede;
+	font-weight: 200;
+}
+
+strong {
 	font-weight: normal;
 }
 
