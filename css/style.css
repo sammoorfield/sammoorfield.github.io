@@ -143,6 +143,10 @@ strong, span {
 	font-weight: 200;
 }
 
+span.skillset {
+	color: #000;
+}
+
 strong {
 	font-weight: normal;
 }
